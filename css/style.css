@@ -1,0 +1,1724 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1000px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+a {
+    display: inline-block;
+}
+header{
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+header h1{
+  width: 150px;
+}
+header h1 a{
+	width: 100%;
+	display: block;
+}
+header h1 a img{
+    width: 100%;
+	display: block;
+}
+header nav.middle{
+
+}
+header ul{
+	display: flex;
+	align-items: center;
+}
+header ul li{
+	margin-right: 30px;
+}
+header ul li:last-child{
+	margin-right:0px;
+}
+header ul li a{
+	font-size: 16px;
+	display: inline-block;
+}
+header ul li.button a{
+    padding: 8px 16px;
+	color: #ff5733;
+	font-weight: 500;
+	border-radius: 4px;
+	background-color: #fac898;
+	opacity: 0.5;
+}
+#spotlight{
+	font-family: 'GT-Eesti';
+	padding: 100px 0;
+}
+#spotlight section.wrapper{
+	height: 100%;
+}
+#spotlight section.top {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+#spotlight section.top div.left{
+	width: 50%;
+}
+#spotlight section.top div.left h1{
+	font-size: 45px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+#spotlight section.top div.left p{
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+#spotlight section.top div.left form{
+   
+}
+#spotlight div.left form input[type="text"]{
+    padding: 13px 16px;
+	border: 1px solid #808080;
+	border-radius: 8px;
+}
+#spotlight section.top div.left form input[type="submit"]{
+	color: #fff;
+	border-radius: 8px;
+	background-color:#0000ff;
+	padding: 13px 16px;
+	border: 1px solid #0000ff;
+	transform: translateX(-27px);
+}
+#spotlight section.top div.right{
+   width: 70%;
+   transform: translate(-39px, -69px);
+   position: relative;
+}
+#spotlight section.top div.right div.img-container{
+	width: 100%;
+}
+#spotlight section.top div.right div.img-container img{
+   width: 100%;
+   display: block;
+}
+#spotlight section.top div.right div.dotted-curve{
+	width: 10%;
+	position: absolute;
+	top: -16px;
+	left: 200px;
+}
+#spotlight section.top div.right div.dotted-curve img{
+	display: block;
+	width: 100%;
+}
+#spotlight section.top div.right div.img-play{
+	width: 12%;
+	background-color: #ff5733;
+	border-radius: 50%;
+	padding: 29px;
+	position: absolute;
+	top: -47px;
+	left:270px;
+}
+#spotlight section.top div.right div.img-play img{
+	display: block;
+	width: 100%;
+	filter:invert(1);
+}
+#spotlight section.bottom{
+
+}
+#spotlight section.bottom h6{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 16px;
+	font-weight: 500;
+}
+#spotlight section.bottom div.brands{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+#spotlight section.bottom div.brands a{
+	width: 70px;
+	display: inline-block;
+}
+#spotlight section.bottom div.brands a img{
+	width: 100%;
+	display: block;
+}
+#spotlight section.bottom div.brands a img.large{
+	width: 30px;
+	display: block;
+	margin: 0 auto;
+}
+
+#about{
+}
+#about section.container section.wrapper{
+	padding:60px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#about section.container div.left{
+	width: 50%;
+}
+#about section.container div.left img{
+	display: block;
+	width: 100%;
+}
+#about section.container div.right{
+    width: 45%;
+	max-width: 335px;
+}
+#about section.container div.right h1.logo-top{
+	width: 35px;
+	margin-bottom: 20px;
+}
+#about section.container div.right h1.logo-top a{
+	border-radius: 14px;
+	padding: 8px;
+}
+#about section.container div.right h1.logo-top a img{
+    width: 100%;
+	display: block;	
+}
+#about section.container div.right h1.edit-white{
+
+}
+#about section.container div.right h1.edit-white a{
+	display: inline-block;
+	background: #fa8128;
+}
+#about section.container div.right h1.lightning-white{
+   
+}
+#about section.container div.right h1.lightning-white a{
+	width: 100%;
+	display: inline-block;
+	background: #ffd800;
+}
+#about section.container div.right h1.film-white{
+    
+}
+#about section.container div.right h1.film-white a{
+	background: #0bda51;
+	width: 100%;
+	display: inline-block;
+}
+#about section.container div.right h2{
+    font-size: 32px;
+	font-family: 'GT-Eesti';
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+#about section.container div.right p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+#about section.container div.right a.button{
+	padding: 13px 13px;
+	color: #fff;
+	font-size: 12px;
+	background: #3f00ff;
+	border-radius: 11px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+#about section.container div.right  hr{
+	width: 44%;
+    background: #d3d3d3;
+    height: 1px;
+    margin-bottom: 20px;
+}
+#about section.container div.right span{
+	display: block;
+	color: #a9a9a9;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+#about section.container div.right small{
+	font-size: 14px;
+	margin-bottom: 15px;
+    display: block;
+}
+#about section.container div.right small b{
+	font-weight: bold;	
+}
+#about section.container div.right h1.logo-bottom {
+	width: 74px;
+}
+#about section.container div.right h1.logo-bottom a{
+	width: 100%;
+	display: block;
+}
+#about section.container div.right h1.logo-bottom a img{
+	width: 100%;
+	display: block;
+}
+#about section.container.bg{
+	background-color: #f0f0f0;
+}
+#about section.container.bg section.wrapper div.right{
+
+}
+
+#brands{
+	margin-bottom: 160px;
+}
+#brands div.title-box{
+    margin: 30px 0;
+}
+#brands div.title-box h3{
+	font-size: 33px;
+	font-weight: bold;
+}
+#brands div.content-box {
+	display: flex;
+	justify-content: space-between;
+}
+#brands div.content-box div.content-item{
+	width: 32%;
+}
+#brands div.content-box div.content-item div.top{
+	width: 100%;
+	position: relative;
+}
+#brands div.content-box div.content-item div.top div.image-container{
+	width: 100%;
+	margin-bottom: 15px;	
+}
+#brands div.content-box div.content-item div.top div.image-container img{
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+#brands div.content-box div.content-item div.top span.icon-container{
+	display: block;
+	width: 39px;
+	background: #fff;
+	border-radius: 50%;
+	padding: 16px;
+	position: absolute;
+	top: 20px;
+	right: 18px;
+}
+#brands div.content-box div.content-item div.top span.icon-container img{
+    display: block;
+	width: 100%;
+}
+#brands div.content-box div.content-item div.top span.logo-container {
+	width: 85px;
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    position: absolute;
+	bottom: 15px;
+    left: 12px;
+}
+#brands div.content-box div.content-item div.top span.logo-container img{
+	display: block;
+	width: 100%;
+}
+#brands div.content-box div.content-item div.top span.nbc{
+	width: 85px;
+    display: block;
+    padding: 6px 31px;
+}
+#brands div.content-box div.content-item div.top span.nbc img{
+	display: block;
+	width: 100%;
+}
+#brands div.content-box div.content-item div.top span.HousingWi{
+	width: 105px;
+    display: block;
+    padding: 9px 13px;
+}
+#brands div.content-box div.content-item div.top span.HousingWi img{
+	display: block;
+	width: 100%;
+}
+#brands div.content-box div.content-item div.bottom{
+
+}
+#brands div.content-box div.content-item div.bottom h4{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#testimonial{
+	padding-bottom: 80px;    
+}
+#testimonial section.wrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#testimonial div{
+	width: 46%;
+	position: relative;
+}
+#testimonial div.left{
+
+}
+#testimonial div.right{
+
+}
+#testimonial div div.img-container{
+	width: 100%;
+	margin-bottom: 15px;
+}
+#testimonial div div.img-container img{
+	width: 100%;
+	display: block;
+}
+#testimonial div div.logo-container{
+	width: 20%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px 21px;
+    position: absolute;
+    top: 317px;
+    left: 14px;
+}
+#testimonial div.right div.logo-container{
+	width: 19%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px 18px;
+    position: absolute;
+    top: 317px;
+    left: 14px
+}
+#testimonial div div.logo-container img{
+	width: 100%;
+	display: block;
+}
+#testimonial div h4{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+#testimonial div h6{
+	font-size: 12px;
+    font-weight: 600;
+}
+#testimonial div span{
+    font-size: 12px;
+    font-weight: 600;
+	color: #9a9a9a;
+	display: block;
+}
+#testimonial div small{
+	font-size: 12px;
+    font-weight: 600;
+    display: block;	
+}
+
+#marketing{
+	padding: 80px 0;
+	background-color: #f8f8f8;
+}
+#marketing section.wrapper{
+
+}
+#marketing  section.top{
+	padding: 0 40px;
+}
+#marketing  section.top h2{
+	text-align: center;
+	margin-bottom: 60px;
+	font-size: 32px;
+	font-weight: 700;
+}
+#marketing  section.top ul{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#marketing  section.top ul li{
+	padding-right: 40px;
+	width: 28%;
+	border-right: 2px solid #edebeb;
+	text-align: center;
+	padding-bottom: 100px;
+}
+#marketing  section.top ul li:nth-child(3n){
+	border-right: 0;
+}
+#marketing  section.top ul li div.img-container{
+	width: 100%;
+	margin-bottom: 30px;
+}
+#marketing  section.top ul li div.img-container img{
+	width: 100%;
+	display: block;
+}
+#marketing  section.top ul li h5{
+    font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+#marketing  section.top ul li p{
+	font-size: 16px;
+}
+#marketing  section.bottom{
+	margin: 60px 0;
+}
+#marketing  section.bottom div.content-box{
+	width: 45%;
+	margin: 0 auto;
+	background-color: #d0dfff;
+	border-radius: 8px;
+	padding: 21px;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	justify-content: space-around; 
+	flex-wrap: wrap;
+	align-items: center;
+} 
+#marketing  section.bottom div.content-box div.img-container{
+	background-color: #fff;
+    border-radius: 42%;
+    width: 9%;
+    position: absolute;
+    top: -22px;
+    left: 24px;
+}
+#marketing  section.bottom div.content-box div.img-container img{
+	width: 100%;
+    padding: 14px;
+    display: block;
+}
+#marketing  section.bottom div.content-box div.left{
+	width: 70%;
+}
+#marketing  section.bottom div.content-box div.left p{
+	font-size: 14px;
+}
+#marketing  section.bottom div.content-box div.right{
+
+}
+#marketing  section.bottom div.content-box div.right a.button{
+	font-size: 14px;
+	display: inline-block;
+	background-color:#0056fb ;
+	border-radius: 8px;
+	color: #fff;
+	padding: 10px 10px;
+}
+
+#video-solution{
+	padding:100px 0 ;
+}
+#video-solution h3{
+	text-align: center;
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+#video-solution div.item-container{
+	display: flex;
+	justify-content: space-between;
+}
+#video-solution div.item-container div.item{
+	padding:50px 10px;
+	padding-bottom:0;
+	width: 31%;
+	text-align: center;
+	border-radius: 10px;
+	height: 531px;
+}
+#video-solution div.item-container div.item.bg-blue{
+	background-color: #d0dfff;
+}
+#video-solution div.item-container div.item.bg-yellow{
+	background-color: #fef4d7;
+}
+#video-solution div.item-container div.item.bg-red{
+	background-color: #ffe4da;
+}
+#video-solution div.item-container div.item div.icon-container{
+	background: #fff;
+    border-radius: 38%;
+    width: 16%;
+    padding: 13px 10px;
+	margin: 20px auto;
+}
+#video-solution div.item-container div.item div.icon-container.wavi-img{
+	border-radius: 37%;
+    width: 17%;
+    padding: 18px 12px;
+}
+#video-solution div.item-container div.item div.icon-container img{
+	width: 100%;
+	display: block;
+}
+#video-solution div.item-container div.item h4{
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+#video-solution div.item-container div.item p{
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#video-solution div.item-container div.item a.button{
+	display: inline-block;
+	padding: 8px 16px;
+	border-radius: 8px;
+	font-size: 14px;
+	color: #fff;
+}
+#video-solution div.item-container div.item a.button.blue{
+	background: #0056fb;
+}
+#video-solution div.item-container div.item a.button.yellow{
+	background: #ffc836;
+}
+#video-solution div.item-container div.item a.button.red{
+	background: #ff794b;
+}
+#video-solution div.item-container div.item div.img-container.blue{
+	width: 90%;
+	margin: 30px auto 0;
+}
+#video-solution div.item-container div.item div.img-container{
+	width: 90%;
+	margin: 30px auto 0;
+
+}
+#video-solution div.item-container div.item div.img-container.yellow{
+
+}
+#video-solution div.item-container div.item div.img-container.red{
+	bottom: -57px;
+}
+#video-solution div.item-container div.item div.img-container img{
+	display: block;
+	width: 100%;
+}
+#video-resources{
+	padding: 40px 0;
+}
+#video-resources h3{
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+#video-resources div.content-box{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+#video-resources div.content-box div.item-box{
+	width: 28%;
+}
+#video-resources div.content-box div.item-box div.img-container{
+	width: 100%;
+	margin-bottom: 25px;
+}
+#video-resources div.content-box div.item-box div.img-container img{
+	width: 100%;
+	display: block;
+}
+#video-resources div.content-box div.item-box h6{
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+#video-resources div.content-box div.item-box h6.blog-post{
+	color: #0056fb;
+}
+#video-resources div.content-box div.item-box p{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+#video-resources div.content-box div.item-box a.button{
+	text-decoration: underline;
+	font-size: 14px;
+	font-weight: 600;
+}
+#video-resources div.button-container{
+	margin: 20px 0;
+	text-align: center;
+}
+#video-resources div.button-container a.button{
+	background-color:#0056fb ;
+	border-radius: 4px;
+	padding: 10px 16px;
+	color: #fff;
+	font-size: 14px;
+}
+#form{
+	background: #000;
+	padding: 20px;
+}
+#form div.top-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#form div.top-container div.left{
+	width: 45%;
+	margin-top: 40px;
+}
+#form div.top-container div.left h3{
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 20px;
+}
+#form div.top-container div.left p{
+	color: #6c6c6c;
+	font-size: 12px;
+}
+#form div.top-container div.left hr{
+	margin-top: 30px;
+	border-top:1px dotted #6c6c6c;
+	width: 30%;
+}
+#form div.top-container div.left h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #cfcfcf;
+	margin:30px 0 20px;
+}
+#form div.top-container div.left span{
+	color: #7a7a7a;
+	font-size: 14px;
+	font-style: italic;
+	display: block;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+#form div.top-container div.left span.jeff{
+	color: #cfcfcf;
+	font-size: 12px;
+	font-style: normal;
+	display:block;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+#form div.top-container div.left small{
+	color: #6c6c6c;
+	font-size: 12px;
+	display: block;
+	margin-bottom: 20px;
+}
+#form div.top-container div.left ul{
+	display: flex;
+	justify-content: space-between;
+	width: 45%;
+}
+#form div.top-container div.left ul li{
+	width: 20%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+#form div.top-container div.left ul li:hover{
+	border: 1px solid red;
+}
+#form div.top-container div.left ul img{
+	width: 100%;
+	display: block;	
+}
+#form div.top-container div.right{
+	width: 45%;
+	background-color: #fff;
+	border-radius: 4px;
+	margin-top: 40px ;
+	padding: 50px;
+	padding-bottom: 0;
+}
+#form div.top-container div.right h3{
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+#form div.top-container div.right form{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	color: #bfbfbf;
+	margin-bottom: 30px;
+}
+#form div.top-container div.right form input{
+	width: 45%;
+	border: 1px solid #bfbfbf;
+	padding: 8px 16px;
+	color: #bfbfbf;
+	margin-bottom: 15px;
+	border-radius: 4px;
+}
+#form div.top-container div.right form input[type="email"]{
+
+}
+#form div.top-container div.right form input[type="text"]{
+
+}
+#form div.top-container div.right form select{
+	width: 45%;
+	border: 1px solid #bfbfbf;
+	padding: 8px 16px;
+	color: #bfbfbf;
+	margin-bottom: 15px;
+	border-radius: 4px;
+}
+#form div.top-container div.right form select option{
+
+}
+#form div.top-container div.right form input[type="checkbox"]{
+	width: 15%;
+}
+#form div.top-container div.right form label{
+	width: calc( 100% - 15%);
+	font-size: 11px;
+	color: #bfbfbf;
+	border-radius: 8px;
+}
+#form div.top-container div.right form label a.button{
+	text-decoration: underline;
+	color: #bfbfbf;
+}
+#form div.top-container div.right a.button-bottom{
+	display: block;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 12px;
+	background-color: #0056fb;
+	padding: 12px 16px;
+	color: #fff;
+}
+#form div.bottom-container{
+	padding: 30px 0;
+}
+#form div.bottom-container ul{
+	display: flex;
+	align-items: center;
+}
+#form div.bottom-container ul li{
+	width: 6%;
+	margin-right: 20px;
+}
+#form div.bottom-container ul li a{
+	width: 100%;
+	display: inline-block;
+}
+#form div.bottom-container ul li a img{
+	width: 100%;
+	display: block;
+}
+footer{
+	padding: 90px 0;
+}
+footer div.top{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+footer div.top div.left{
+	width: 20%;
+}
+footer div.top div.left h3{
+	font-size: 19px;
+	margin-bottom: 30px;
+}
+footer div.top div.left ul{
+	display: flex;
+	justify-content: space-between;	
+}
+footer div.top div.left ul li{
+	background-color: #f0f0f0;
+	padding: 8px;
+	border-radius: 8px;
+}
+footer div.top div.left ul li img{
+	filter: grayscale(1);
+}
+footer div.top div.right{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: calc( 100% - 40%);
+}
+footer div.top div.right ul {
+	display: flex;
+	flex-direction: column;
+	width: 24%;
+}
+footer div.top div.right ul li{
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	align-items: flex-start;
+}
+footer div.top div.right ul li a{
+	width: 100%;
+}
+footer div.top div.right ul.solutions{
+}
+footer div.top div.right ul.solutions li{
+	vertical-align: top;
+	width: 20%;
+	align-items: flex-start;
+}
+footer div.top div.right ul.solutions li a{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+footer div.top div.right ul.solutions li a img{
+	display:inline-block;
+	width: 100%;
+	margin-right: 10px;
+}
+footer div.top div.right ul.solutions li a span{
+	font-size: 12px;
+}
+footer div.top div.right ul li.heading{
+	font-weight: 700;
+	font-size: 18px;
+}
+footer div.bottom{
+	margin: 20px 0;
+}
+footer div.bottom ul{
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 12px;
+	align-items: center;
+}
+footer div.bottom ul li{
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+footer div.bottom ul.choose li:nth-child(2){
+	font-weight: 600;
+}
+
+@media all and (max-width:1280px){
+	header ul li a{
+		font-size: 14px;
+	}	
+	header h1{
+		width: 100px;
+	}
+	#spotlight section.top div.left h1{
+		font-size: 46px;
+	}
+	#spotlight section.top div.left p{
+		font-size: 15px;
+	}
+	#spotlight{
+		padding: 91px 0;
+	}
+	#spotlight section.top div.right div.dotted-curve{
+		width: 9%;
+	}
+	#spotlight section.top div.right div.img-play{
+		width: 11%;
+		padding: 27px;
+	}
+}
+@media all and (max-width:1080px){
+	#spotlight{
+		padding: 68px 0;
+	}
+	#spotlight section.top div.right{
+		width: 62%;
+	}
+	#spotlight section.top div.right div.dotted-curve{
+		left: 172px;
+		top: -13px;
+	}
+	#spotlight section.top div.right div.img-play{
+		padding: 24px;
+		top: -38px;
+		left: 228px;
+	}
+	#spotlight section.top div.left h1{
+		font-size: 43px;
+	}
+	#about section.container div.left{
+		width: 53%;
+	}
+	#about section.container div.right h1.logo-top{
+		margin-bottom: 20px;
+	}
+	#about section.container div.right span{
+		margin-bottom: 20px;
+	}
+	#about section.container div.right small{
+		margin-bottom: 20px;
+	}
+	#about section.container div.right p{
+		margin-bottom: 11px;
+		font-size: 14px;
+	}
+	#about section.container div.right h2{
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+	#about section.container div.right span{
+		font-size: 13px;
+	}
+	#about section.container div.right small{
+		font-size: 13px;
+	}
+	
+	#testimonial div div.logo-container{
+		top: 288px;
+	}
+	#testimonial div.right div.logo-container{
+		top: 285px;
+	}
+	#marketing section.bottom div.content-box div.img-container{
+		width: 10%;
+	}
+	#marketing section.bottom div.content-box div.left p{
+		font-size: 12px;
+	}
+	#marketing section.bottom div.content-box div.right a.button{
+		font-size: 12px;	
+	}
+	#marketing{
+		padding-bottom: 30px;
+	}
+	#video-solution{
+		padding-top: 45px;
+	}
+}
+	
+@media all and (max-width:980px){
+	header nav.middle{
+		display: none;
+	}
+	#spotlight section.top div.left h1{
+		font-size: 35px;
+	}
+	#spotlight section.top div.right div.dotted-curve{
+		left: 129px;
+		top:-11px ;
+	}
+	#spotlight section.top div.right div.img-play{
+		padding: 18px;
+		top: -35px;
+		left: 178px;
+	}
+	header h1{
+		width: 24%;
+	}
+	#spotlight div.left form input[type="text"]{
+		padding: 10px 16px;
+	}
+	#spotlight section.top div.left form input[type="submit"]{
+		padding: 10px 16px;
+	}
+	#about section.container div.left{
+		width: 50%;
+	}
+	#about section.container div.right{
+		width: 44%;
+	}
+	#about section.container div.right h1.logo-top{
+		margin-bottom: 10px;
+	}
+	#about section.container div.right h2{
+		font-size: 25px;
+		margin-bottom: 9px;
+	}
+	#about section.container div.right p{
+		font-size: 13px;
+	}
+	#about section.container div.right a.button{
+		padding: 10px 13px;
+		font-size: 11px;
+		margin-bottom: 15px;
+	}
+	#about section.container div.right hr{
+		margin-bottom: 15px;
+	}
+	#about section.container div.right span{
+		font-size: 12px;
+	}
+	#about section.container div.right span{
+		margin-bottom: 11px;
+	}
+	#about section.container div.right small{
+		margin-bottom: 10px;
+	}
+	#brands div.title-box h3{
+		font-size: 31px;
+	}
+	#testimonial div div.logo-container{
+		width: 24%;
+		top: 220px;
+	}
+	#testimonial div.right div.logo-container{
+		width: 20%;
+		top: 217px;
+	}
+	#marketing{
+		padding-top: 60px;
+	}
+	#marketing section.top ul li p{
+		font-size: 14px;
+	}
+	#marketing section.top ul li{
+		padding-bottom: 77px;
+	}
+	#marketing section.bottom div.content-box{
+		width: 51%;
+	}
+	#marketing section.bottom div.content-box div.img-container img{
+		padding: 13px;
+	}
+	#marketing section.bottom{
+		margin: 40px 0;
+	}
+	#video-solution{
+		padding-bottom: 50px;
+	}
+	#video-solution h3{
+		font-size: 29px;
+	}
+	#video-solution div.item-container div.item h4{
+		font-size: 20px;
+	}
+	#video-solution div.item-container div.item p{
+		font-size: 14px;
+	}
+	#video-solution div.item-container div.item a.button{
+		font-size: 13px;
+	}
+	#video-solution div.item-container{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#video-solution div.item-container div.item{
+		width: 45%;
+		margin-bottom: 50px;
+	}
+	#video-solution div.item-container div.item{
+		margin-bottom: 94px;
+	}
+	#video-solution div.item-container div.item:first-child{
+		margin-right: 40px;
+	}
+	#video-solution div.item-container div.item:last-child{
+		margin-bottom: 0;
+	}
+	#video-resources h3{
+		font-size: 29px;
+	}
+	#video-resources div.content-box div.item-box p{
+		font-size: 15px;
+	}
+	#video-resources div.content-box div.item-box a.button{
+		font-size: 13px;
+	}
+	#video-resources div.button-container a.button{
+		font-size: 13px;
+	}
+	#form div.bottom-container ul li{
+		width: 7%;
+	}
+	
+	#form div.top-container div.left ul li{
+		width: 16%;
+	}
+	#form div.top-container div.left{
+		width: 100%;
+	}
+	#form div.top-container div.right{
+		width: 100%;
+		padding-bottom: 50px;
+	}
+	#form div.top-container div.right a.button-bottom{
+		width: 45%;
+		margin: 0 auto;
+	}
+	footer div.top div.left h3{
+		font-size: 16px;
+	}
+	footer div.top div.left{
+		width: 28%;
+	}
+	#form div.top-container div.right form input[type="checkbox"]{
+		margin-top: 20px;
+	}
+	#form div.top-container div.right form label{
+		margin-top: 20px;
+	}
+
+}
+@media all and (max-width:768px){
+	#spotlight section.top div.right{
+		display: none;
+	}
+	#spotlight section.top div.left{
+		width: 100%;
+	}
+	#spotlight section.top div.left h1{
+		font-size: 35px;
+		text-align: center;
+	}
+	#spotlight section.top div.left p{
+		text-align: center;
+	}
+	#spotlight section.top div.left form{
+		text-align: center;
+	}
+	#spotlight section.top{
+		margin-bottom: 60px;
+	}
+	#spotlight section.bottom h6{
+		margin-bottom: 26px;
+		font-size: 15px;
+	}
+	#spotlight section.bottom div.brands a{
+		width: 21%;
+		padding: 16px;
+	}
+	#about section.container section.wrapper{
+		padding: 50px 0;
+	}
+	#brands div.title-box h3{
+		font-size: 27px;
+	}
+	#brands div.content-box{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#brands div.content-box div.content-item{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	#brands div.content-box div.content-item:first-child{
+		margin-right: 30px;
+	}
+	#brands div.content-box div.content-item:last-child{
+		margin-bottom: 0;
+	}
+	#brands div.content-box div.content-item div.bottom h4{
+		font-size: 15px;
+	}
+	#brands{
+		margin-bottom: 85px;
+	}
+	#testimonial{
+		padding-bottom: 60px;
+	}
+	#testimonial div div.logo-container{
+		width: 31%;
+		top: 173px;
+	}
+	#testimonial div.right div.logo-container{
+		width: 31%;	
+		padding: 13px 18px;
+		top: 171px;
+	}
+	#marketing{
+		padding-top: 54px;
+	}
+	#marketing section.top h2{
+		font-size: 27px;
+		margin-bottom: 50px;
+	}
+	#marketing section.top ul li{
+		width: 45%;
+	}
+	#marketing section.top ul li:nth-child(2n){
+		border-right: 0;
+	}
+	#marketing section.top ul li:nth-child(3){
+		border-right: 2px solid #edebeb;
+	}
+	#marketing section.bottom div.content-box{
+		width: 61%;
+		padding: 13px;
+	}
+	#video-solution h3{
+		font-size: 25px;
+	}
+	#video-solution div.item-container div.item h4{
+		font-size: 18px;
+	}
+	#video-solution div.item-container div.item p{
+		font-size: 12px;
+	}
+	#video-resources h3{
+		font-size: 24px;
+	}
+	#video-resources div.content-box{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#video-resources div.content-box div.item-box{
+		width: 45%;	
+		margin-bottom: 20px;
+	}
+	#video-resources div.content-box div.item-box:first-child{
+		margin-right: 50px;
+	}
+	#video-resources div.content-box div.item-box:last-child{
+		margin-bottom: 0;
+	}
+	footer{
+		padding: 60px 0;
+	}
+	footer div.top div.left{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	footer div.top div.left ul{
+		width: 45%;
+		margin: 0 auto;
+	}
+	footer div.top div.left h3{
+		margin-bottom: 15px;
+		padding: 0 40px;
+		text-align: center;
+	}
+	footer div.top div.right{
+		width: 100%;
+	}
+	footer div.top div.left ul li{
+		padding: 6px;
+	}
+}
+
+@media all and (max-width:640px){
+	#spotlight{
+		padding: 17px 0;
+	}
+	#spotlight section.top div.left h1{
+		font-size: 27px;
+	}
+	#spotlight section.top div.left p{
+		font-size: 13px;
+	}
+	#spotlight div.left form input[type="text"]{
+		padding: 9px 13px;
+	}
+	#spotlight section.top div.left form input[type="submit"]{
+		padding: 9px 13px;
+	}
+	#spotlight section.bottom h6{
+		margin-bottom: 15px;
+	}
+	#spotlight section.bottom div.brands a{
+		padding-bottom: 0;
+	}
+	#about section.container div.left{
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	#about section.container div.right{
+		width: 100%;
+		max-width: unset;
+	}
+	#about section.container section.wrapper{
+		padding: 30px 0;
+	}
+	#brands div.title-box h3{
+		font-size: 22px;
+	}
+	#testimonial div div.logo-container{
+		width: 34%;
+		top: 132px;
+	}
+	#testimonial div.right div.logo-container{
+		width: 31%;
+		padding: 10px 18px;
+		top: 130px;
+	}
+	#marketing section.top ul li p{
+		font-size: 13px;
+	}
+	#marketing section.top ul li{
+		padding-bottom: 44px;
+		padding-right: 30px;
+	}
+	#marketing section.bottom div.content-box{
+		width: 84%;
+	}
+	#video-solution div.item-container div.item{
+		width: 90%;
+		margin: 0 0 90px;
+		padding: 8px 15px;
+		height: 428px;
+	}
+	#video-solution div.item-container div.item:first-child{
+		margin-right: 0;
+	}
+	#video-solution div.item-container div.item:last-child{
+		margin-bottom: 0;
+	}
+	#video-solution div.item-container div.item div.icon-container{
+		width: 12%;
+	}
+	#video-solution div.item-container div.item div.img-container{
+		width: 65%;
+	}
+	#video-solution div.item-container div.item div.img-container.blue{
+		width: 65%;
+	}
+	#video-solution div.item-container div.item div.icon-container.wavi-img{
+		width: 12%;
+		padding: 15px 10px;
+	}
+	#video-resources h3{
+		font-size: 20px;
+	}
+	#video-resources{
+		padding: 18px 0;
+	}
+	#video-resources div.content-box div.item-box:first-child{
+		margin: 0 auto 40px;
+	}
+	#video-resources div.content-box div.item-box{
+		width: 85%;
+		margin: 0 auto 40px;
+	}
+	#video-resources div.content-box div.item-box div.img-container{
+		margin-bottom: 15px;
+	}
+	#video-resources div.content-box div.item-box h6{
+		margin-bottom: 6px;
+	}
+	#video-resources div.button-container{
+		margin-bottom: 13px;
+	}
+	#form div.top-container div.right a.button-bottom{
+		padding: 10px 16px;
+	}
+	#form div.top-container div.right{
+		padding: 38px;
+	}
+	#form div.bottom-container ul li{
+		width: 13%;
+	}
+	footer{
+		padding:46px 0;
+	}
+	footer div.top div.left h3{
+		font-size: 14px;
+	}
+	footer div.top div.right ul li.heading{
+		font-size: 16px;
+	}
+	footer div.bottom{
+		margin-bottom: 0;
+	}	
+}
+
+@media all and (max-width:480px){
+	header ul{
+		display: none;
+	}
+	header h1{
+		margin: 0 auto;
+		width: 49%;
+	}
+	#spotlight{
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	#spotlight section.top{
+		margin-bottom: 25px;
+	}
+	#spotlight section.top div.left h1{
+		font-size: 23px;
+		margin-bottom: 13px;
+	}
+	#spotlight section.top div.left p{
+		margin-bottom: 23px;
+	}
+	#spotlight div.left form input[type="text"]{
+		padding: 7px 8px;
+		font-size: 12px;
+	}
+	#spotlight section.top div.left form input[type="submit"]{
+		padding: 7px 8px;
+		font-size: 12px;
+	}
+	#spotlight section.bottom div.brands{
+		justify-content: center;
+	}
+	#spotlight section.bottom div.brands a{
+		width: 41%;
+		padding: 22px 41px 0;	
+	}
+	#about section.container div.right{
+		padding: 0 20px;
+	}
+	#brands div.content-box div.content-item{
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	#brands div.title-box h3{
+		font-size: 22px;
+	}
+	#testimonial{
+		padding-bottom: 38px;
+	}
+	#testimonial div.left{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	#testimonial div.right{
+		width: 100%;
+	}
+	#testimonial div div.logo-container{
+		width: 27%;
+		top: 217px;
+	}
+	#testimonial div.right div.logo-container{
+		width: 29%;
+		padding: 11px 18px;
+		top: 220px;
+	}
+	#testimonial div h4{
+		font-size: 15px;
+	}
+	#marketing{
+		padding-top: 40px;
+	}
+	#marketing section.top h2{
+		font-size: 21px;
+		margin-bottom: 30px;
+	}
+	#marketing section.top ul li{
+		width: 100%;
+		border-right: 0;
+		padding-right: 0;
+	}
+	#marketing section.top ul li:nth-child(3){
+		border-right: 0;
+	}
+	#marketing section.bottom{
+		margin: 0;
+	}
+	#marketing  section.bottom div.content-box{
+		padding: 20px 0 0;
+	}
+	#marketing section.bottom div.content-box div.left p{
+		margin-bottom: 20px;
+		width: 100%;
+		min-width: 100%;
+	}
+	#marketing section.bottom div.content-box div.right a.button{
+		margin-bottom: 20px;
+	}
+	#marketing section.bottom div.content-box div.img-container{
+		width: 15%;
+	}
+	#marketing section.bottom div.content-box div.img-container img{
+		padding: 15px;
+	}
+	#video-solution{
+		padding-top: 32px;
+	}
+	#video-solution h3{
+		font-size: 21px;
+		margin-bottom: 30px;
+	}
+	#video-solution div.item-container div.item div.icon-container{
+		width: 15%;
+	}
+	#video-solution div.item-container div.item div.icon-container.wavi-img{
+		width: 15%;
+	}
+	#video-solution div.item-container div.item{
+		height: 394px;
+	}
+	#video-resources{
+		padding-top: 0;
+	}
+	#form div.top-container div.left h3{
+		font-size: 30px;
+	}
+	#form div.top-container div.left{
+		margin-top: 13px;
+	}
+	#form div.top-container div.left ul{
+		width: 62%;
+	}
+	#form div.top-container div.left ul li{
+		width: 24%;
+		margin-right: 5px;
+	}
+	#form div.top-container div.right{
+		padding: 26px;
+	}
+	#form div.top-container div.right form input{
+		width: 100%;
+		padding: 6px 15px;
+	}
+	#form div.top-container div.right form select{
+		width: 100%;
+		padding: 6px 15px;
+	}
+	#form div.top-container div.right a.button-bottom{
+		width: 50%;
+	}
+	#form div.top-container div.right a.button-bottom{
+		padding: 8px 13px;
+	}
+	#form div.bottom-container ul li{
+		width: 19%;
+	}
+	footer div.top div.right ul{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	footer div.top div.right ul:nth-child(3){
+		margin-bottom: 0;
+	}
+	footer div.top div.right ul:last-child{
+		margin-bottom: 0;
+	}
+}
+@media all and (max-width:360px){
+	#spotlight section.bottom{
+		display: none;
+	}
+
+}
+@media all and (max-width:320px){
+
+}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
